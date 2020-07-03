@@ -1,0 +1,36 @@
+.navbar
+{
+    margin-bottom: 20px;
+}
+
+h1
+{
+    color: white;
+    margin: 0 auto;
+}
+
+#cConditions
+{
+    background-color: white;
+    color: black;
+}
+
+.clist
+{
+        border-style: solid;
+        border-radius: 10px;
+        border-width: 2px;
+}
+
+.searchArea
+{
+    margin-left: 30px;
+}
+
+.card
+{
+    border-radius: 5px;
+    background-color: #0a3553;
+    color: white;
+}
+

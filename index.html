@@ -29,53 +29,67 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-light" style="background-color: #0a3e64;">
-            <h1>Weather Dashboard</h1></nav>      
+        <nav class="navbar navbar-light" 
+             style="background-color: #0a3553;">
+            <h1>Weather Dashboard</h1>
+       </nav>      
     </header>
     
-        <div class="row">
-            <div class="col-sm-4 searchArea">
+    <div class="row">
 
-                <h3>Search for a City:</h3>
-                <span id="error"></span>
+        <div class="col-sm-4 searchArea">
 
-                <form class="form-inline">
+            <h3>Search for a City:</h3>
 
-                    <input class="form-control mr-sm-2" 
-                           type="search" 
-                           id="city">
+            <span id="error"></span>
+            
+            <form class="form-inline">
 
-                    <button type="button" 
-                            id="submitCity" 
-                            class="btn" 
-                            type="submit">Search</button>
-                </form>
+                <input class="form-control mr-sm-2" 
+                       type="search" 
+                       id="city" 
+                       placeholder="Search">
 
-                <br>
+                <button type="button" 
+                        id="searchCity" 
+                        class="btn btn-primary" 
+                        type="submit">Search</button>
+            </form>
 
-                <div class="city-list"></div>
-            </div>
+            <br>
 
-            <div class="col currentConditions">
-                <div class="card">
-                
-                    <div id="show" class="card-body"></div>
+            <div class="city-list" id="searchCity"></div>
 
-                </div>
-                
-                <br>
-                
-                <div class="row" id="5-day-forecast">
-                
-                    <h3>5-Day Forecast:</h3>
-                
-                </div>
-            </div>
+            <br>
+            
         </div>
+
+        <div class="col currentCondition" style="padding-right: 30px">
+
+            <div style="border: 10px;">
+              <div id="cConditions" class="card-body"></div>
+        
+                <h5 id="currentTemp" style="margin-bottom: 10px;">Temperature</h5>
+                <h5 id="currentHum" style="margin-bottom: 10px;">Humidity</h5>
+                <h5 id="currentWind" style="margin-bottom: 10px;">Wind Speed</h5>                
+                <h5 id="uvIndex" style="margin-bottom: 10px;">UV Index </h5>
+              
+            </div>
+
+            <br>
+
+            <h3>5-Day Forecast:</h3>
+            <div class="row" id="5-day-forecast">
+                
+            </div>
+
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <script src="logic.js"></script>
 
 </body>
+
 </html>
